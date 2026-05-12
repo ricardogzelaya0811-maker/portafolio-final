@@ -12,7 +12,7 @@
     { "archivo": "curriculum-vitae.docx", "titulo": "Curriculum Vitae Profesional MOS", "descripcion": "CV moderno con diseño de columnas, barras de habilidades y sección de logros.", "emoji": "🏆" }
   ],
   "excel": [
-    { "archivo": "dashboard-ventas.xlsx", "titulo": "Dashboard de Ventas Mensual", "descripcion": "Panel interactivo con tablas dinámicas, gráficos automáticos y KPIs en tiempo real.", "emoji": "💹" },
+    { "archivo": "TAREA 5 MIERCOLES 8 DE ABRIL.xlsx", "titulo": "Consulta de Notas-pagina", "descripcion": "sistema de consulta de notas con base de datos mediante el uso de funciones de Excel.", "emoji": "💹" },
     { "archivo": "control-inventario.xlsx", "titulo": "Control de Inventario con Alertas", "descripcion": "Hoja de inventario con formato condicional, BUSCARV y alertas de stock mínimo.", "emoji": "📦" },
     { "archivo": "presupuesto-familiar.xlsx", "titulo": "Presupuesto Familiar Anual", "descripcion": "Planilla de gastos e ingresos con gráficos de tendencia y proyecciones automáticas.", "emoji": "💰" },
     { "archivo": "base-datos-empleados.xlsx", "titulo": "Base de Datos de Empleados", "descripcion": "Registro de RRHH con filtros avanzados, validación de datos y búsquedas inteligentes.", "emoji": "👥" },
