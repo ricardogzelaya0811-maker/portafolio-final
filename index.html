@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ricardo Zelaya — Portal Profesional MOS con IA</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A84C;--gold-light:#E8D4A0;--gold-dark:#8B6914;--navy:#0D1B2A;--navy-mid:#1A2F45;--cream:#FAF7F0;--cream-dark:#F0EBE0;--muted:#5A6070;--shadow:0 4px 24px rgba(13,27,42,.10);--r:14px;--rs:8px;--e:.3s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:#1A1A2E;line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,.2);height:64px;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.2rem;font-weight:700}
+.nav-links{display:flex;gap:.25rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.875rem;font-weight:500;padding:.5rem 1rem;border-radius:6px;transition:var(--e)}
+.nav-links a:hover{color:var(--gold);background:rgba(201,168,76,.1)}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
+.hbg span{display:block;width:22px;height:2px;background:var(--gold);border-radius:2px}
+header{min-height:100vh;background:linear-gradient(145deg,var(--navy) 0%,var(--navy-mid) 60%,#1A3050 100%);display:flex;align-items:center;justify-content:center;padding:100px 2rem 4rem;overflow:hidden;position:relative}
+header::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 50% at 70% 50%,rgba(201,168,76,.07) 0%,transparent 70%)}
+.hg{display:grid;grid-template-columns:1fr 1fr;gap:4rem;max-width:1100px;width:100%;align-items:center}
+.badge{display:inline-block;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.4);color:var(--gold-light);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.4rem 1rem;border-radius:100px;margin-bottom:1.5rem}
+.hn{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,6vw,4.2rem);font-weight:900;color:#fff;line-height:1.05;margin-bottom:1rem}
+.hn span{color:var(--gold)}
+.htag{font-size:1.05rem;color:rgba(255,255,255,.6);margin-bottom:2.5rem}
+.hcta{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:var(--navy);font-weight:600;font-size:.9rem;padding:.8rem 1.8rem;border-radius:100px;text-decoration:none;transition:var(--e)}
+.hcta:hover{background:var(--gold-light);transform:translateY(-2px)}
+.sr{display:flex;gap:2rem;margin-top:2.5rem}
+.sn{display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1}
+.sl{font-size:.7rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.pw{display:flex;justify-content:center}
+.pr{position:relative;width:280px;height:280px}
+.pr::before{content:'';position:absolute;inset:-12px;border-radius:50%;border:2px solid var(--gold);opacity:.4;animation:spin 20s linear infinite}
+.pr::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px dashed rgba(201,168,76,.3);animation:spin 10s linear infinite reverse}
+.pc{width:280px;height:280px;border-radius:50%;overflow:hidden;border:4px solid var(--gold);background:var(--navy-mid)}
+.pc img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:5rem 2rem}
+.slbl{font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:.75rem}
+.stitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.5rem);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:1.5rem}
+.sline{width:56px;height:3px;background:linear-gradient(90deg,var(--gold),transparent);border-radius:2px;margin-bottom:2.5rem}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.pt p{color:var(--muted);margin-bottom:1.25rem;line-height:1.8}
+.skb{background:var(--navy);border-radius:var(--r);padding:2rem}
+.skb h3{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.05rem;margin-bottom:1.5rem}
+.sk{margin-bottom:1.2rem}
+.skr{display:flex;justify-content:space-between;font-size:.83rem;color:rgba(255,255,255,.8);margin-bottom:5px}
+.skbar{height:5px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.skfill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:3px}
+.dbg{background:var(--cream-dark)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.tab{padding:.5rem 1.3rem;border-radius:100px;border:1.5px solid var(--navy);background:transparent;font-family:'DM Sans',sans-serif;font-size:.83rem;font-weight:600;color:var(--navy);cursor:pointer;transition:var(--e)}
+.tab.on,.tab:hover{background:var(--navy);color:var(--gold)}
+.dg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1.25rem}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.05);transition:var(--e);display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(13,27,42,.14)}
+.ct{height:105px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;position:relative}
+.ct.w{background:linear-gradient(135deg,#1B5EAB,#2B7CD3)}
+.ct.e{background:linear-gradient(135deg,#1A6B37,#217346)}
+.cn{position:absolute;bottom:6px;right:8px;font-size:.62rem;color:rgba(255,255,255,.4);font-weight:700}
+.cb{padding:.9rem 1rem;flex:1;display:flex;flex-direction:column}
+.ctype{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem}
+.ctype.w{color:#1B5EAB}.ctype.e{color:#1A6B37}
+.ctitle{font-weight:600;font-size:.86rem;color:var(--navy);margin-bottom:.35rem;line-height:1.3}
+.cdesc{font-size:.76rem;color:var(--muted);line-height:1.5;flex:1}
+.cfile{font-size:.65rem;color:var(--gold-dark);background:rgba(201,168,76,.1);padding:2px 6px;border-radius:4px;margin-top:.4rem;font-family:monospace;word-break:break-all;display:inline-block}
+.cfoot{padding:0 1rem .9rem}
+.bdl{display:flex;align-items:center;justify-content:center;gap:.35rem;width:100%;padding:.5rem;background:var(--navy);color:var(--gold);border:none;border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;cursor:pointer;text-decoration:none;transition:var(--e)}
+.bdl:hover{background:var(--gold);color:var(--navy)}
+.empty{grid-column:1/-1;text-align:center;padding:3rem;color:var(--muted);font-size:.9rem}
+.apanel{background:var(--navy);border-radius:var(--r);padding:2rem;margin-top:2.5rem}
+.apanel h3{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.05rem;margin-bottom:1.25rem}
+.asteps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem}
+.astep{background:rgba(255,255,255,.06);border-radius:var(--rs);padding:1rem;border-left:3px solid var(--gold)}
+.asn{font-size:.68rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
+.astep p{font-size:.8rem;color:rgba(255,255,255,.72);line-height:1.5}
+.astep code{font-size:.73rem;color:var(--gold-light);background:rgba(0,0,0,.3);padding:1px 5px;border-radius:3px}
+.iag{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem}
+.iac{background:#fff;border-radius:var(--r);padding:1.6rem;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.05);transition:var(--e)}
+.iac:hover{transform:translateY(-3px)}
+.iai{width:42px;height:42px;background:linear-gradient(135deg,var(--navy),var(--navy-mid));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:.9rem}
+.iac h3{font-weight:600;font-size:.95rem;color:var(--navy);margin-bottom:.4rem}
+.iac p{font-size:.84rem;color:var(--muted);line-height:1.7}
+.pbox{margin-top:2.5rem;background:var(--navy);border-radius:var(--r);padding:2rem}
+.pbox h3{font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:1.25rem}
+.px{background:rgba(255,255,255,.07);border-radius:var(--rs);padding:1rem 1.2rem;margin-bottom:.9rem;border-left:3px solid var(--gold)}
+.pxl{font-size:.68rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.35rem}
+.pxt{font-size:.83rem;color:rgba(255,255,255,.8);line-height:1.6;font-family:'Courier New',monospace}
+.cbg{background:var(--navy)}
+.cg{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;align-items:start}
+.ci h3{font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:1rem}
+.ci p{color:rgba(255,255,255,.6);font-size:.88rem;line-height:1.7;margin-bottom:1.75rem}
+.cit{display:flex;align-items:center;gap:.75rem;margin-bottom:.9rem;font-size:.85rem;color:rgba(255,255,255,.65)}
+.fg{margin-bottom:1.2rem}
+.fg label{display:block;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.55);margin-bottom:.35rem;letter-spacing:.05em;text-transform:uppercase}
+.fg input,.fg textarea,.fg select{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--rs);padding:.72rem 1rem;color:#fff;font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:var(--e)}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--gold);background:rgba(255,255,255,.1)}
+.fg textarea{resize:vertical;min-height:110px}
+.fg select option{background:var(--navy)}
+.bsend{width:100%;padding:.85rem;background:var(--gold);color:var(--navy);border:none;border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:700;cursor:pointer;transition:var(--e)}
+.bsend:hover{background:var(--gold-light);transform:translateY(-1px)}
+.fok{display:none;text-align:center;padding:2rem}
+footer{background:#060D14;padding:1.75rem 2rem;text-align:center;color:rgba(255,255,255,.28);font-size:.78rem}
+footer span{color:var(--gold)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.on{opacity:1;transform:translateY(0)}
+@media(max-width:768px){.nav-links{display:none;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:var(--navy);padding:1rem}.nav-links.open{display:flex}.hbg{display:flex}.hg{grid-template-columns:1fr;text-align:center;gap:2rem}.pw{order:-1}.pr,.pc{width:190px;height:190px}.sr{justify-content:center}.pg,.iag,.cg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">RZ · MOS</div>
+  <ul class="nav-links" id="nav">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#documentos">📄 Documentos</a></li>
+    <li><a href="#ia">🤖 IA</a></li>
+    <li><a href="#contacto">✉️ Contacto</a></li>
+  </ul>
+  <button class="hbg" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<header>
+  <div class="hg">
+    <div>
+      <div class="badge">Portafolio Profesional MOS · 2025</div>
+      <h1 class="hn">RICARDO<br><span>ZELAYA</span></h1>
+      <p class="htag">Estudiante MOS &nbsp;|&nbsp; Especialista en Office + IA</p>
+      <a href="#documentos" class="hcta">↓ Ver mis documentos</a>
+      <div class="sr">
+        <div><span class="sn" id="cT">—</span><span class="sl">Documentos</span></div>
+        <div><span class="sn" id="cW">—</span><span class="sl">Word</span></div>
+        <div><span class="sn" id="cE">—</span><span class="sl">Excel</span></div>
+      </div>
+    </div>
+    <div class="pw">
+      <div class="pr">
+        <div class="pc">
+          <img src="assets/foto.jpg" alt="Foto de Ricardo Zelaya">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="inicio"><div class="wrap reveal">
+  <div class="slbl">Perfil profesional</div>
+  <h2 class="stitle">Sobre Mí</h2>
+  <div class="sline"></div>
+  <div class="pg">
+    <div class="pt">
+      <p>Soy Ricardo Zelaya, un estudiante comprometido con el dominio de las herramientas de productividad Microsoft Office, actualmente en preparación para obtener la certificación Microsoft Office Specialist (MOS). Mi interés por la tecnología me ha llevado a explorar no solo el uso estándar de las aplicaciones, sino también su integración con inteligencia artificial para optimizar procesos y elevar la calidad del trabajo profesional.</p>
+      <p>A lo largo de este portafolio presento una selección de documentos que evidencian mi competencia en el manejo avanzado de Microsoft Office. Cada proyecto fue desarrollado con atención al detalle y apoyo de herramientas de IA, reflejando mi capacidad para combinar habilidades técnicas con pensamiento analítico y creatividad orientada a resultados.</p>
+    </div>
+    <div class="skb">
+      <h3>⚡ Habilidades Técnicas</h3>
+      <div class="sk"><div class="skr"><span>Microsoft Word</span><span>90%</span></div><div class="skbar"><div class="skfill" style="width:90%"></div></div></div>
+      <div class="sk"><div class="skr"><span>Microsoft Excel</span><span>80%</span></div><div class="skbar"><div class="skfill" style="width:80%"></div></div></div>
+      <div class="sk"><div class="skr"><span>Inteligencia Artificial</span><span>85%</span></div><div class="skbar"><div class="skfill" style="width:85%"></div></div></div>
+      <div class="sk"><div class="skr"><span>Diseño de documentos</span><span>75%</span></div><div class="skbar"><div class="skfill" style="width:75%"></div></div></div>
+      <div class="sk"><div class="skr"><span>Análisis de datos</span><span>70%</span></div><div class="skbar"><div class="skfill" style="width:70%"></div></div></div>
+    </div>
+  </div>
+</div></div>
+
+<div id="documentos" class="dbg"><div class="wrap reveal">
+  <div class="slbl">Portafolio MOS</div>
+  <h2 class="stitle">Mis Documentos</h2>
+  <div class="sline"></div>
+  <div class="tabs">
+    <button class="tab on" onclick="filt('all',this)">Todos (<span id="tA">0</span>)</button>
+    <button class="tab" onclick="filt('word',this)">📄 Word (<span id="tW">0</span>)</button>
+    <button class="tab" onclick="filt('excel',this)">📊 Excel (<span id="tE">0</span>)</button>
+  </div>
+  <div class="dg" id="grid"><div class="empty">⏳ Cargando…</div></div>
+  <div class="apanel">
+    <h3>📁 ¿Cómo agregar más documentos?</h3>
+    <div class="asteps">
+      <div class="astep"><div class="asn">Paso 1</div><p>Sube el archivo a <code>archivos/word/</code> o <code>archivos/excel/</code> en GitHub.</p></div>
+      <div class="astep"><div class="asn">Paso 2</div><p>Edita <code>archivos.json</code> y agrega la entrada con nombre, título, descripción y emoji.</p></div>
+      <div class="astep"><div class="asn">Paso 3</div><p>Haz commit en GitHub. El sitio se actualiza en segundos automáticamente.</p></div>
+      <div class="astep"><div class="asn">Nueva foto</div><p>Reemplaza <code>assets/foto.jpg</code> con tu nueva imagen y haz commit.</p></div>
+    </div>
+  </div>
+</div></div>
+
+<div id="ia"><div class="wrap reveal">
+  <div class="slbl">Proceso creativo</div>
+  <h2 class="stitle">Cómo Usé la IA</h2>
+  <div class="sline"></div>
+  <p style="color:var(--muted);max-width:680px;margin-bottom:2.5rem;line-height:1.8">Durante el desarrollo de este portafolio utilicé Claude (IA de Anthropic) como asistente en cada etapa: ideación, redacción de documentos, generación de fórmulas Excel y diseño de este sitio web.</p>
+  <div class="iag">
+    <div class="iac"><div class="iai">🧠</div><h3>Ideación de documentos</h3><p>Pedí a la IA sugerencias de documentos Word y Excel que demostraran habilidades MOS avanzadas, para estructurar un portafolio coherente y profesional.</p></div>
+    <div class="iac"><div class="iai">✍️</div><h3>Redacción y corrección</h3><p>Usé prompts específicos para que Claude generara texto formal, corrigiera ortografía y estilo, y sugiriera mejoras en todos mis documentos Word.</p></div>
+    <div class="iac"><div class="iai">📊</div><h3>Fórmulas Excel</h3><p>Describí mis necesidades y la IA me proporcionó fórmulas exactas (BUSCARV, SUMAR.SI, SI anidado), explicando cada una paso a paso.</p></div>
+    <div class="iac"><div class="iai">🎨</div><h3>Diseño del portafolio</h3><p>Proporcioné especificaciones detalladas y Claude generó todo el HTML, CSS y JavaScript con diseño UX/UI profesional y responsive.</p></div>
+  </div>
+  <div class="pbox">
+    <h3>📋 Prompts reales que usé con Claude</h3>
+    <div class="px"><div class="pxl">Para documentos Word</div><div class="pxt">"Actúa como experto en Microsoft Word. Crea una carta formal de presentación para el sector tecnológico con encabezado profesional, 3 párrafos bien estructurados y cierre formal en español."</div></div>
+    <div class="px"><div class="pxl">Para hojas Excel</div><div class="pxt">"Crea una plantilla de control de inventario en Excel con: Código, Producto, Categoría, Cantidad, Precio, Total. Incluye fórmulas automáticas y formato condicional para alertar stock mínimo."</div></div>
+    <div class="px"><div class="pxl">Para este portafolio</div><div class="pxt">"Actúa como experto senior en desarrollo web frontend. Crea mi portafolio profesional MOS con diseño navy y dorado, carga dinámica desde JSON, GitHub Pages compatible, responsive y con foto de avatar."</div></div>
+  </div>
+</div></div>
+
+<div id="contacto" class="cbg"><div class="wrap reveal">
+  <div class="slbl" style="color:var(--gold-light)">Hablemos</div>
+  <h2 class="stitle" style="color:#fff">Contacto</h2>
+  <div class="sline"></div>
+  <div class="cg">
+    <div class="ci">
+      <h3>¿Tienes alguna pregunta?</h3>
+      <p>Estoy disponible para responder consultas sobre mi portafolio, los documentos MOS o mi proceso de trabajo con inteligencia artificial.</p>
+      <div class="cit">📧 <span>ricardo@correo.com</span></div>
+      <div class="cit">🎓 <span>Estudiante MOS · Certificación en proceso</span></div>
+      <div class="cit">🌎 <span>El Salvador</span></div>
+      <div class="cit">🤖 <span>Portafolio creado con Claude AI</span></div>
+    </div>
+    <div>
+      <div id="form">
+        <div class="fg"><label>Nombre completo</label><input type="text" id="fn" placeholder="Tu nombre completo"></div>
+        <div class="fg"><label>Correo electrónico</label><input type="email" id="fe" placeholder="tu@correo.com"></div>
+        <div class="fg"><label>Asunto</label>
+          <select id="fa"><option value="">Selecciona un asunto…</option><option>Consulta sobre documentos MOS</option><option>Colaboración académica</option><option>Solicitud de información</option><option>Otro</option></select>
+        </div>
+        <div class="fg"><label>Mensaje</label><textarea id="fm" placeholder="Escribe tu mensaje aquí…"></textarea></div>
+        <button class="bsend" onclick="send()">Enviar mensaje ✉️</button>
+      </div>
+      <div class="fok" id="ok">
+        <div style="font-size:3rem;margin-bottom:1rem">✅</div>
+        <p style="color:var(--gold);font-size:1.1rem;font-weight:600">¡Mensaje enviado!</p>
+        <p style="color:rgba(255,255,255,.6);margin-top:.5rem">Gracias por contactarme. Te responderé pronto.</p>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<footer><p>© 2025 <span>Ricardo Zelaya</span> · Portafolio MOS con IA · Hecho con Claude AI · El Salvador</p></footer>
+
+<script>
+let docs=[];
+async function load(){
+  try{
+    const r=await fetch('archivos.json');
+    if(!r.ok)throw new Error('404');
+    const d=await r.json();
+    docs=[...(d.word||[]).map((x,i)=>({...x,type:'word',num:'W'+(i+1).toString().padStart(2,'0')})),
+          ...(d.excel||[]).map((x,i)=>({...x,type:'excel',num:'E'+(i+1).toString().padStart(2,'0')}))];
+    counts();render('all');
+  }catch(e){
+    document.getElementById('grid').innerHTML='<div class="empty">⚠️ No se encontró <code>archivos.json</code>.<br>Ponlo junto a <code>index.html</code>.<br><small style="color:#aaa;display:block;margin-top:.5rem">'+e.message+'</small></div>';
+  }
+}
+function counts(){
+  const w=docs.filter(d=>d.type==='word').length,e=docs.filter(d=>d.type==='excel').length;
+  document.getElementById('cT').textContent=docs.length;
+  document.getElementById('cW').textContent=w;
+  document.getElementById('cE').textContent=e;
+  document.getElementById('tA').textContent=docs.length;
+  document.getElementById('tW').textContent=w;
+  document.getElementById('tE').textContent=e;
+}
+function render(f){
+  const l=f==='all'?docs:docs.filter(d=>d.type===f);
+  const g=document.getElementById('grid');
+  if(!l.length){g.innerHTML='<div class="empty">No hay documentos aún.</div>';return;}
+  g.innerHTML=l.map(d=>`<div class="card"><div class="ct ${d.type==='word'?'w':'e'}"><span>${d.emoji||(d.type==='word'?'📝':'📊')}</span><span class="cn">${d.num}</span></div><div class="cb"><div class="ctype ${d.type==='word'?'w':'e'}">${d.type==='word'?'● Microsoft Word':'● Microsoft Excel'}</div><div class="ctitle">${d.titulo}</div><div class="cdesc">${d.descripcion}</div><span class="cfile">📁 ${d.archivo}</span></div><div class="cfoot"><a class="bdl" href="archivos/${d.type}/${d.archivo}" download>↓ Descargar</a></div></div>`).join('');
+}
+function filt(t,b){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');render(t);}
+function send(){
+  if(!document.getElementById('fn').value||!document.getElementById('fe').value||!document.getElementById('fm').value){alert('Completa nombre, correo y mensaje.');return;}
+  document.getElementById('form').style.display='none';
+  document.getElementById('ok').style.display='block';
+}
+document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.1}).observe(el));
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+load();
+</script>
+</body>
+</html>

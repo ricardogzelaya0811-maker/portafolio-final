@@ -1,0 +1,22 @@
+{
+  "word": [
+    { "archivo": "carta-presentacion.docx", "titulo": "Carta de Presentación Profesional", "descripcion": "Carta formal dirigida a reclutadores con estructura MOS avanzada y estilos personalizados.", "emoji": "📝" },
+    { "archivo": "informe-mercado.docx", "titulo": "Informe de Análisis de Mercado", "descripcion": "Reporte corporativo con tabla de contenidos automática, gráficos y referencias cruzadas.", "emoji": "📋" },
+    { "archivo": "manual-procedimientos.docx", "titulo": "Manual de Procedimientos Internos", "descripcion": "Documento técnico multinivel con encabezados, listas automáticas y secciones protegidas.", "emoji": "📑" },
+    { "archivo": "boletin-empresarial.docx", "titulo": "Boletín Informativo Empresarial", "descripcion": "Newsletter corporativo en formato columnas con imágenes y diseño editorial profesional.", "emoji": "📰" },
+    { "archivo": "contrato-servicios.docx", "titulo": "Contrato de Servicios Profesionales", "descripcion": "Contrato legal con campos de formulario, firmas digitales y protección de documento.", "emoji": "📄" },
+    { "archivo": "propuesta-proyecto.docx", "titulo": "Propuesta de Proyecto Académico", "descripcion": "Propuesta estructurada con portada automática, resumen ejecutivo y cronograma.", "emoji": "🗂️" },
+    { "archivo": "reporte-trimestral.docx", "titulo": "Reporte de Resultados Trimestrales", "descripcion": "Informe ejecutivo con gráficos de Word, estadísticas embebidas y formato corporativo.", "emoji": "📊" },
+    { "archivo": "combinacion-correspondencia.docx", "titulo": "Plantilla de Combinación de Correspondencia", "descripcion": "Template para publipostaje masivo con campos dinámicos y personalización avanzada.", "emoji": "✉️" },
+    { "archivo": "guia-usuario-office.docx", "titulo": "Guía de Usuario — Software Office", "descripcion": "Manual técnico con capturas de pantalla, numeración de figuras e índice temático.", "emoji": "📗" },
+    { "archivo": "curriculum-vitae.docx", "titulo": "Curriculum Vitae Profesional MOS", "descripcion": "CV moderno con diseño de columnas, barras de habilidades y sección de logros.", "emoji": "🏆" }
+  ],
+  "excel": [
+    { "archivo": "dashboard-ventas.xlsx", "titulo": "Dashboard de Ventas Mensual", "descripcion": "Panel interactivo con tablas dinámicas, gráficos automáticos y KPIs en tiempo real.", "emoji": "💹" },
+    { "archivo": "control-inventario.xlsx", "titulo": "Control de Inventario con Alertas", "descripcion": "Hoja de inventario con formato condicional, BUSCARV y alertas de stock mínimo.", "emoji": "📦" },
+    { "archivo": "presupuesto-familiar.xlsx", "titulo": "Presupuesto Familiar Anual", "descripcion": "Planilla de gastos e ingresos con gráficos de tendencia y proyecciones automáticas.", "emoji": "💰" },
+    { "archivo": "base-datos-empleados.xlsx", "titulo": "Base de Datos de Empleados", "descripcion": "Registro de RRHH con filtros avanzados, validación de datos y búsquedas inteligentes.", "emoji": "👥" },
+    { "archivo": "analisis-notas.xlsx", "titulo": "Análisis Estadístico de Notas", "descripcion": "Hoja académica con promedios, desvío estándar, ranking y gráfico de distribución.", "emoji": "📈" },
+    { "archivo": "gantt-proyectos.xlsx", "titulo": "Planificador de Proyectos (Gantt)", "descripcion": "Diagrama de Gantt interactivo con formato condicional y porcentaje de avance.", "emoji": "🗓️" }
+  ]
+}
