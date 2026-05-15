@@ -67,11 +67,36 @@
   }
 ],
   "excel": [
-    { "archivo": "TAREA 5 MIERCOLES 8 DE ABRIL.xlsx", "titulo": "Consulta de Notas-pagina", "descripcion": "sistema de consulta de notas con base de datos mediante el uso de funciones de Excel.", "emoji": "💹" },
-    { "archivo": "control-inventario.xlsx", "titulo": "Control de Inventario con Alertas", "descripcion": "Hoja de inventario con formato condicional, BUSCARV y alertas de stock mínimo.", "emoji": "📦" },
-    { "archivo": "presupuesto-familiar.xlsx", "titulo": "Presupuesto Familiar Anual", "descripcion": "Planilla de gastos e ingresos con gráficos de tendencia y proyecciones automáticas.", "emoji": "💰" },
-    { "archivo": "base-datos-empleados.xlsx", "titulo": "Base de Datos de Empleados", "descripcion": "Registro de RRHH con filtros avanzados, validación de datos y búsquedas inteligentes.", "emoji": "👥" },
-    { "archivo": "analisis-notas.xlsx", "titulo": "Análisis Estadístico de Notas", "descripcion": "Hoja académica con promedios, desvío estándar, ranking y gráfico de distribución.", "emoji": "📈" },
-    { "archivo": "gantt-proyectos.xlsx", "titulo": "Planificador de Proyectos (Gantt)", "descripcion": "Diagrama de Gantt interactivo con formato condicional y porcentaje de avance.", "emoji": "🗓️" }
-  ]
+    [
+  {
+    "archivo": "acondiciones en excel.xlsx",
+    "titulo": "Funciones condicionales SUMAR.SI, CONTAR.SI y PROMEDIO.SI",
+    "descripcion": "Práctica de funciones condicionales en Excel con base de datos de ventas por ciudad y vendedor."
+  },
+  {
+    "archivo": "atabla_ventas_practica.xlsx",
+    "titulo": "Tabla de Ventas - Práctica de Tablas en Excel",
+    "descripcion": "Base de datos de productos vendidos con categorías (Accesorios, Tecnología, Audio, Oficina), cantidades, precios y totales."
+  },
+  {
+    "archivo": "practica 8 de abril (1).xlsm",
+    "titulo": "Formulario de Búsqueda con Base de Datos",
+    "descripcion": "Formulario interactivo conectado a base de datos de empleados (código, DUI, nombre, apellido y cargo)."
+  },
+  {
+    "archivo": "practica del 20 de marzo, tarea 1 abril.xlsm",
+    "titulo": "Base de Datos de Clientes",
+    "descripcion": "Gran base de datos de clientes con información personal, dirección, teléfono, grupo y valores."
+  },
+  {
+    "archivo": "TAREA 5 MIERCOLES 8 DE ABRIL.xlsx",
+    "titulo": "Sistema de Notas Estudiantiles",
+    "descripcion": "Base de datos de estudiantes con calificaciones de Matemática, Lenguaje, promedio y consulta de notas."
+  },
+  {
+    "archivo": "FACTURA1.xlsx",
+    "titulo": "Plantilla de Factura con Bases de Datos",
+    "descripcion": "Sistema de facturación con hojas separadas de Vendedores, Clientes, Productos y Factura."
+  }
+]
 }
