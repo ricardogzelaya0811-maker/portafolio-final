@@ -1,16 +1,71 @@
 {
   "word": [
-    { "archivo": "carta-presentacion.docx", "titulo": "Carta de Presentación Profesional", "descripcion": "Carta formal dirigida a reclutadores con estructura MOS avanzada y estilos personalizados.", "emoji": "📝" },
-    { "archivo": "informe-mercado.docx", "titulo": "Informe de Análisis de Mercado", "descripcion": "Reporte corporativo con tabla de contenidos automática, gráficos y referencias cruzadas.", "emoji": "📋" },
-    { "archivo": "manual-procedimientos.docx", "titulo": "Manual de Procedimientos Internos", "descripcion": "Documento técnico multinivel con encabezados, listas automáticas y secciones protegidas.", "emoji": "📑" },
-    { "archivo": "boletin-empresarial.docx", "titulo": "Boletín Informativo Empresarial", "descripcion": "Newsletter corporativo en formato columnas con imágenes y diseño editorial profesional.", "emoji": "📰" },
-    { "archivo": "contrato-servicios.docx", "titulo": "Contrato de Servicios Profesionales", "descripcion": "Contrato legal con campos de formulario, firmas digitales y protección de documento.", "emoji": "📄" },
-    { "archivo": "propuesta-proyecto.docx", "titulo": "Propuesta de Proyecto Académico", "descripcion": "Propuesta estructurada con portada automática, resumen ejecutivo y cronograma.", "emoji": "🗂️" },
-    { "archivo": "reporte-trimestral.docx", "titulo": "Reporte de Resultados Trimestrales", "descripcion": "Informe ejecutivo con gráficos de Word, estadísticas embebidas y formato corporativo.", "emoji": "📊" },
-    { "archivo": "combinacion-correspondencia.docx", "titulo": "Plantilla de Combinación de Correspondencia", "descripcion": "Template para publipostaje masivo con campos dinámicos y personalización avanzada.", "emoji": "✉️" },
-    { "archivo": "guia-usuario-office.docx", "titulo": "Guía de Usuario — Software Office", "descripcion": "Manual técnico con capturas de pantalla, numeración de figuras e índice temático.", "emoji": "📗" },
-    { "archivo": "curriculum-vitae.docx", "titulo": "Curriculum Vitae Profesional MOS", "descripcion": "CV moderno con diseño de columnas, barras de habilidades y sección de logros.", "emoji": "🏆" }
-  ],
+  {
+    "archivo": "a88588ef-f6dc-4bb8-953f-c758df2bc6b4.docx",
+    "titulo": "Agregar texto a elementos gráficos",
+    "descripcion": "Explica cómo agregar texto a imágenes, formas y SmartArt, y cómo modificar elementos gráficos (tamaño, posición, estilos y efectos)."
+  },
+  {
+    "archivo": "f6c4d80e-b842-439c-9d11-7d244fa2bfc7.docx",
+    "titulo": "Crear y configurar secciones de documentos",
+    "descripcion": "Trabajo completo sobre saltos de sección (página siguiente, continuo, par e impar), encabezados, numeración y formato independiente por sección."
+  },
+  {
+    "archivo": "e88d07a7-c42d-4e26-a75f-3d817884f9eb.docx",
+    "titulo": "Uso general de Microsoft Word",
+    "descripcion": "Introducción amplia al uso profesional de Word: estilos, formato de texto, tablas, imágenes, encabezados y revisión."
+  },
+  {
+    "archivo": "15ffd916-0b65-4049-b18b-cad8d8fce2be.docx",
+    "titulo": "Insertar ilustraciones y cuadros de texto",
+    "descripcion": "Cómo insertar y dar formato a imágenes, ilustraciones y cuadros de texto con ejemplos prácticos."
+  },
+  {
+    "archivo": "bf83ae12-9ccc-4fac-bd76-62a6e47f16bc.docx",
+    "titulo": "Importar datos a documentos de Word",
+    "descripcion": "Métodos para importar datos desde Excel, CSV, TXT, internet y vinculación de datos."
+  },
+  {
+    "archivo": "3f4a3208-ff0c-467a-a3ae-2cf7a080d9ab.docx",
+    "titulo": "Inserción y formato de texto y párrafos",
+    "descripcion": "Cómo insertar texto y párrafos, aplicar formato, estilos y organizar el contenido."
+  },
+  {
+    "archivo": "ca4ea026-76a2-43bf-adf8-b639356c8930.docx",
+    "titulo": "Crear y modificar listas",
+    "descripcion": "Tipos de listas (viñetas, numeradas y multinivel), creación, modificación y personalización."
+  },
+  {
+    "archivo": "ef8d9e9f-1353-4dd2-a0c0-135c2c9b8298.docx",
+    "titulo": "Modificar tablas en Microsoft Word",
+    "descripcion": "Cómo modificar la estructura y dar formato profesional a las tablas."
+  },
+  {
+    "archivo": "02c45ae2-50f2-42d1-b4e3-fb1a5e859d00.docx",
+    "titulo": "Navegar dentro de los documentos",
+    "descripcion": "Panel de navegación, búsqueda y herramientas para moverse eficientemente en documentos largos."
+  },
+  {
+    "archivo": "552e132a-17ae-4155-9c1a-469ed55ff7b7.docx",
+    "titulo": "Saltos de página en Microsoft Word",
+    "descripcion": "Concepto, tipos de saltos, importancia y buenas prácticas de uso."
+  },
+  {
+    "archivo": "b2981538-9458-4e13-9018-259ea9f7d6c4.docx",
+    "titulo": "Crear tablas en Microsoft Word",
+    "descripcion": "Creación, partes, tipos, herramientas y ventajas del uso de tablas."
+  },
+  {
+    "archivo": "d35cc237-87eb-4a9b-a0b1-a4630da45dad.docx",
+    "titulo": "Validación de datos",
+    "descripcion": "Concepto, tipos y beneficios de la validación de datos en entornos digitales."
+  },
+  {
+    "archivo": "8d37f627-a364-4996-92f7-0a9edb8d0273.docx",
+    "titulo": "Comentarios y revisión de documentos",
+    "descripcion": "Uso profesional de comentarios y control de cambios para trabajo colaborativo."
+  }
+],
   "excel": [
     { "archivo": "TAREA 5 MIERCOLES 8 DE ABRIL.xlsx", "titulo": "Consulta de Notas-pagina", "descripcion": "sistema de consulta de notas con base de datos mediante el uso de funciones de Excel.", "emoji": "💹" },
     { "archivo": "control-inventario.xlsx", "titulo": "Control de Inventario con Alertas", "descripcion": "Hoja de inventario con formato condicional, BUSCARV y alertas de stock mínimo.", "emoji": "📦" },
